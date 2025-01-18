@@ -2,7 +2,7 @@
 using namespace std; 
 
 int main(){
-    int arr[] = {3,5,7,8,9}, flag, count=0;
+    int arr[] = {3,5,7,8,10}, flag, count=0;
     int length = sizeof(arr)/sizeof(arr[0]);
 
     for(int i=0;i<length;i++){

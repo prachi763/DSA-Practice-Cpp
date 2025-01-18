@@ -21,7 +21,7 @@ int bSearch(int length, int arr[], int element){
 
 
 int main(){
-    int arr[] = {3,5,7,8,9};
+    int arr[] = {3,5,7,8,10};
     int length = sizeof(arr)/sizeof(arr[0]), element;
     cout<<"Enter element to search:"<<endl;
     cin>>element;
