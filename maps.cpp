@@ -34,5 +34,13 @@ int main(){
     for(auto it : sq1){
         cout<<it.first<<" - "<<sq1.count(it.first)<<endl;
     }
+
+    if(sq1.find(4) != sq1.end()){
+        cout<<"True"<<endl;
+    }
+    else{
+        cout<<"False";
+    }
+
     return 0;
 }
