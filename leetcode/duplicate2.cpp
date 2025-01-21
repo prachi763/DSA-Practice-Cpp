@@ -7,9 +7,9 @@ using namespace std;
 
 bool containsNearbyDuplicate(vector<int>& nums, int k) {
     int s = nums.size();
-    for (int i = 0; i < s-1; i++) {
-        for (int j = i+1; j<s; j++){
-            if(nums[i]==nums[j] && abs(i-j)<=k){
+            for (int i = 0; i <= s-2; i++) {
+                for (int j = i+1; j<= i+k && j<=s-1; j++){
+                if(nums[i]==nums[j] && abs(i-j)<=k){
                 return true;
             }
         }
