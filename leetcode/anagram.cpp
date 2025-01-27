@@ -5,6 +5,7 @@ using namespace std;
 
 bool isAnagram(string s, string t) {
     map<char, int> m;
+
     for(auto element : s){
         if(m.find(element) == m.end()){
             m.insert({element,1});
@@ -14,9 +15,12 @@ bool isAnagram(string s, string t) {
         }
     }
     
-    for(auto element : s){
+    for(auto element : t){
         if(m.find(element) != m.end()){
             m[element]--;
+        }
+        else{
+            return false;
         }
     }
 
